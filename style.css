@@ -1,0 +1,251 @@
+body{
+  font-family: "Roboto";
+}
+
+.container{
+  width: 336px;
+  height: auto;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header{
+  background-color: #ffdc40;
+  height: 28px;
+  width: 336.5px;
+  border-top-left-radius: 9.5px;
+  border-top-right-radius: 9.5px;
+}
+
+.title{
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: 900;
+}
+
+.sort-area{
+  display: flex;
+  justify-content: end;
+  height: 40px;
+}
+
+.sort-button{
+  display: flex;
+  position: relative;
+  right: 34px;
+  top: 20px;
+  width: 30px;
+  height: 15px;
+}
+
+.sort-a-z{
+  position: relative;
+  height: 15px;
+}
+
+.sort-a-z-fade{
+  position: absolute;
+}
+
+.sort-a-z-black{
+  position: absolute;
+  z-index: -1;
+}
+
+.sort-button:hover .sort-a-z-fade{
+  visibility: hidden;
+}
+
+.sort-z-a{
+  position: relative;
+  z-index: -1;
+  display: none;
+}
+
+.sort-z-a-black{
+  position: absolute;
+}
+
+.sort-z-a-fade{
+  position: absolute;
+}
+
+.input-area{
+  height: 64px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-box{
+  width: 270px;
+  height: 38px;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  position: relative;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* align-items: center; */
+}
+
+.input-container{
+  width: 270px;
+  height: 38px;
+  /* border: 1px solid #c4c4c4; */
+  /* border-radius: 10px; */
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+input:focus {
+  outline: none;
+}
+
+.enter-task{
+  border: none;
+}
+
+#enter-task{
+  border: none;
+  position: relative;
+  left: 20px;
+  display: block;
+  width: 190px;
+}
+
+.remove-div{
+  display: flex;
+  width: 40px;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  position: relative;
+  left: 20px;
+}
+
+.remove-group{
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.remove-fade{
+  position: absolute;
+}
+
+.remove-purple{
+  position: absolute;
+  z-index: -1;
+}
+
+.remove-group:hover .remove-fade{
+  visibility: hidden;
+}
+
+.tasks-area{
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  width: 270px;
+  height: 0px;
+  /* border: 1px solid red; */
+}
+
+li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 8px;
+}
+
+.task-text{
+  width: 190px;
+}
+
+.task-text:focus {
+  outline: none;
+}
+
+.task-remove-group{
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.task-remove-fade{
+  position: absolute;
+}
+
+.task-remove-purple{
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.task-remove-group:hover .task-remove-fade{
+  visibility: hidden;
+}
+
+.adding-buttons{
+  height: 65px;
+  width: 336px;
+  border-bottom-left-radius: 9.5px;
+  border-bottom-right-radius: 9.5px;
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wide-add-button{
+  font-size: 14px;
+  font-weight: 400;
+  width: 155px;
+  height: 42px;
+  border-radius: 50px;
+  background-color: #833ae0;
+  color: white;
+  position: absolute;
+  top: 8px;
+  display: flex;
+  vertical-align: middle;
+}
+
+.round-add-button{
+  width: 42px;
+  height: 42px;
+  border-radius: 20px;
+  border: none;
+  background-color: #9953F1;
+  font-size: 14px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-text{
+  display: flex;
+  pointer-events: none;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 80px;
+}
