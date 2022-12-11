@@ -114,7 +114,9 @@ sortButton.addEventListener("click", (event) => {
   }
   document.querySelectorAll("li").forEach((item, index) => {
     task.innerHTML =
-      '<div class="task-text"></div> <div class="task-remove-group"><div class="task-remove-fade"><img src="/remove-fade.svg" alt="remove-fade"></div> <div class="task-remove-purple"><img src="/remove-purple.svg" alt="remove-purple" class="task-remove-purple"></div></div>';
+      '<div class="task-text"></div> <div class="task-remove-group"><div class="task-remove-fade"><img src="/remove-icons/remove-fade.svg" alt="remove-fade"></div> <div class="task-remove-purple"><img src="/remove-icons/remove-purple.svg" alt="remove-purple" class="task-remove-purple"></div></div>';
     item.firstElementChild.innerText = taskArray[index];
   });
+
+  listBox.scrollTop = 0;
 });

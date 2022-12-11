@@ -92,16 +92,11 @@ body{
   border: 1px solid #c4c4c4;
   border-radius: 10px;
   position: relative;
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-  /* align-items: center; */
 }
 
 .input-container{
   width: 270px;
   height: 38px;
-  /* border: 1px solid #c4c4c4; */
-  /* border-radius: 10px; */
   position: absolute;
   display: flex;
   flex-wrap: wrap;
